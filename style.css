@@ -9,11 +9,11 @@
 }*/
 
 :root {
-  --clr-icons: #929292;
+  --clr-icons: #D97E6A;
   --clr-text: #fff;
-  --clr-bg-dark: #242424;
-  --clr-bg-light: #3b3b3b;
-  --clr-accent: #ff7600;
+  --clr-bg-dark: #375C8C;
+  --clr-bg-light: #86728C;
+  --clr-accent: #F2935C;
 }
 
 img {
@@ -65,7 +65,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   line-height: 1;
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-size: clamp(3rem, 10vw, 12rem);
 
 }
 
@@ -126,7 +126,8 @@ footer {
     display: grid;
     grid-template-columns:
       minmax(1em, 1fr)
-      repeat(3,minmax(10rem, 30rem))
+      repeat(2,minmax(15rem, 35rem))
+      minmax(5rem, 10rem)
       minmax(1em, 1fr);
     gap: 2em;
     position: relative;
@@ -187,7 +188,9 @@ footer {
     margin-top: 4em;
   }
 
-
+.adventures{
+  grid-row: 6/7
+}
   footer {
     grid-column: 2/3;
   }
