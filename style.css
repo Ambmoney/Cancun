@@ -191,6 +191,16 @@ footer {
 .adventures{
   grid-row: 6/7
 }
+
+.container {
+  inline-size: min(100% - 4rem, 70rem);
+  margin-inline: auto;
+}
+
+.flow {
+  display: grid;
+  gap: var(--size-3);
+}
   footer {
     grid-column: 2/3;
   }
