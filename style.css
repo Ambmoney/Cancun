@@ -192,6 +192,29 @@ footer {
   grid-row: 6/7
 }
 
+.media-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  gap: var(--size-3);
+  grid-row-end: 8/8;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  
+  
+}
+
+.media-element {
+  padding: var(--size-3);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+}
+
 .container {
   inline-size: min(100% - 4rem, 70rem);
   margin-inline: auto;
