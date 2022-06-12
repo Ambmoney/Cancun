@@ -1,3 +1,6 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
 *,
 *::before,
 **::after {
@@ -197,7 +200,8 @@ footer {
   grid-auto-flow: column;
   grid-auto-columns: 23%;
   gap: var(--size-3);
-  grid-row-end: 8/8;
+  grid-row-end: 8/9
+  ;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   
@@ -205,6 +209,9 @@ footer {
 }
 
 .media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--size-2);
   padding: var(--size-3);
   background: var(--surface-2);
   border-radius: var(--radius-2);
@@ -213,6 +220,7 @@ footer {
 .media-element > img {
   inline-size: 100%;
   aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 .container {
