@@ -19,6 +19,11 @@
   --clr-accent: #ff9000;
 }
 
+.logo {
+  max-width: 31%;
+  max-width: 10%;
+}
+
 img {
   max-width: 100%;
   
@@ -197,6 +202,10 @@ main::after {
   
 }
 
+.card {
+  max-width: 400px;
+}
+
 .snaps-inline {
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: var(--spacer, 1rem);
@@ -211,4 +220,8 @@ main::after {
 
 footer {
   margin-top: 2em;
+  align-items: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
 }
