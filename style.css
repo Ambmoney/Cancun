@@ -20,8 +20,8 @@
 }
 
 .logo {
-  max-width: 31%;
   max-width: 10%;
+  
 }
 
 img {
@@ -92,6 +92,7 @@ header {
 .nav {
   flex-grow: 1;
   display: flex;
+  gap: 1em;
   justify-content: space-around;
 }
 
